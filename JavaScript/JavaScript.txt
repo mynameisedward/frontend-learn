@@ -1,0 +1,6 @@
+ECMAScript — это правила, стандарт
+ECMAScript является спецификация для скриптовых языков
+
+
+JavaScript — самое популярное осуществление стандарта ECMAScript.
+Помимо JavaScript есть также ActionScript и JScript — другие языки, которые реализуют ECMAScript
