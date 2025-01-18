@@ -1,0 +1,80 @@
+1. <datalist>  Input со списком 
+    Используется совместно с input
+
+    <div>
+        <input type="text" list="pets"/>
+        
+        <datalist id="pets">
+            <option value="cat"></option>
+            <option value="dog"></option>
+            <option value="ants"></option>
+            <option value="elephant"></option>
+            <option value="zebra"></option>
+        </datalist>
+    </div>
+
+    Связываются по id (pets в данном случае)
+
+    Что создает:
+        Создает input в котором есть стрелочка и можно выбрать что то из списка datalist
+        Также можно ввести и будет подсказка
+
+
+2. <sub> и <sup>  Стилизация символов вверх и вниз
+    sub делает символ вниз 
+        H <sub> 2 </sub> O  (H20 но двойка будет снизу)
+
+    sup делает символ вверх
+        E = MC <sup>2</sup>  (Двойка будет сверху как квадрат) 
+
+
+
+3. <details> и <summary> Открывающийся контент
+
+    <summary> - нужно для того, чтобы поменять название
+
+    <details> - открывающийся контент
+
+    <details>
+        <summary>Открой</summary>
+
+        какой то контент
+    </details>
+
+
+
+4. <dialog> Модальное окно
+
+    <dialog>
+        какой-то контент
+    </dialog>
+
+    С css мы можем стилизовать этот Тег
+    И с помощью javascript открывать модальное окно
+
+
+5. <figure> и <figcaption>
+
+    Чтобы вставить внуть картинку и сделать описание для нее с помощью тега <figcaption>
+    
+    Медиаконтент с описанием
+
+    <figure>
+        <img src="something.jpeg">
+
+        <figcaption>This is the picture</figcaption>
+    </figure>
+
+6. <picture> 
+
+    Тег нужен для того, чтобы подгружать картинку по каким то css свойствам
+    Например, сделать адаптив для сайта
+
+    <picture>
+
+        <source media="(max-width: 500px)" srcset="somepicture.jpg"/>
+
+    </picture>
+
+    Внутри тега <picture> есть тег <source>, где мы можем указать атрибут media и вписать css свойства,
+        по которым будет выгружаться картинка из srcset
