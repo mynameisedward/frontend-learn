@@ -1,0 +1,6 @@
+Файл скрипта JavaScript можно подключить вот так:
+    <script src='scripts/my-script'></script>
+    Тег script и атрибут src
+
+Если атрибут src есть, то содержимое тега script будет игнорироваться
+
