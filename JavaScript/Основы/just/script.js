@@ -1,3 +1,7 @@
-let yo  = 'yo';
+"use strict"
 
-console.log(yo)
+console.log(typeof Math) // "object"  (1)
+
+console.log(typeof null) // "object"  (2)
+
+console.log(typeof alert)
