@@ -1,7 +1,11 @@
-"use strict"
+x = +prompt('x')
+n = +prompt('n')
 
-console.log(typeof Math) // "object"  (1)
 
-console.log(typeof null) // "object"  (2)
-
-console.log(typeof alert)
+function pow(x, n) {
+    if (n >= 1) {
+        return x ** n
+    } else {
+        return
+    }
+}   
