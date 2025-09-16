@@ -2,18 +2,14 @@
 let menu = {
   width: 200,
   height: 300,
-  title: "My menu"
+  title: "My menu",
+
+  obj: {
+    yo: 'yo',
+    man: 'man'
+  }
 };
 
-function multiplyNumeric(object) {
-    for(let key in object) {
-        if (typeof(object[key]) == 'number') {
-            object[key] = object[key] * 2
-        }
-    }
-}
+let newMenu = structuredClone(menu)
 
-
-multiplyNumeric(menu);
-
-console.log(menu)
+console.log(newMenu)
