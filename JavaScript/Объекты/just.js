@@ -1,15 +1,15 @@
-// до вызова функции
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu",
+let calculator = {
+    read() {
+        a = prompt('Введи первое число')
+        b = prompt('Введи второе число')
 
-  obj: {
-    yo: 'yo',
-    man: 'man'
-  }
-};
-
-let newMenu = structuredClone(menu)
-
-console.log(newMenu)
+        this.a = +a
+        this.b = +b
+    }, 
+    sum() {
+        alert(+this.a + +this.b)
+    },
+    mul() {
+        alert(this.a * this.b)
+    }
+}

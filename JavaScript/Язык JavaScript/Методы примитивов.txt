@@ -1,0 +1,1 @@
+Все примитивы кроме null и undefined(string, number, boolean, bigInt, symbol) имеют методы
