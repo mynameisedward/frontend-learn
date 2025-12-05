@@ -1,0 +1,116 @@
+Коммиты оформляются по стандарту Conventional Commits
+
+ШАГ 1. Выберите тип изменения
+    В начале сообщения укажите тип, который описывает суть изменений:
+
+    - feat: Добавление новой функциональности.
+    - fix: Исправление ошибки.
+    - docs: Изменение в документации.
+    - style: Правки по стилю (форматирование, пробелы, запятые и т. д.).
+    - refactor: Рефакторинг кода без исправления ошибок или добавления нового функционала.
+    - perf: Оптимизация производительности.
+    - test: Добавление или обновление тестов.
+    - build: Изменения, касающиеся сборки проекта.
+    - ci: Настройка или изменение CI/CD.
+    - chore: Прочие задачи (например, изменения в .gitignore).
+    - revert: Откат предыдущего коммита.
+
+    Пример:
+        fix(auth): fix token validation issue
+
+
+ШАГ 2. Укажите область изменений(scope, опционально)
+    Scope помогает уточнить, к какой части проекта относится изменение. 
+    Используйте универсальные области, чтобы сразу было понятно, что именно затронуто
+
+    - auth: Авторизация и аутентификация.
+    - ui: Пользовательский интерфейс.
+    - api: Серверные или клиентские API.
+    - core: Основной функционал приложения.
+    - config: Файлы конфигурации.
+    - deps: Обновление зависимостей.
+    - tests: Модульные, интеграционные или e2e тесты.
+    - docs: Документация.
+    - db: Изменения в базе данных.
+    - build: Скрипты сборки или сборочные файлы.
+
+    Пример:
+        docs(readme): add installation instructions
+
+    
+Шаг 3: Напишите краткое описание
+    Описание должно быть коротким и ясным. 
+    Вот несколько примеров для вдохновения из разных областей:
+
+        UI: "Fix button display on small screens"
+        API: "Add endpoint for file uploads"
+        Core: "Optimize cost calculation logic"
+        Docs: "Update project setup section"
+        Tests: "Add e2e tests for login feature"
+        Deps: "Upgrade dependencies to latest versions"
+        Build: "Configure build to support new plugins"
+
+    Пример:
+        feat(auth): add support for Google OAuth
+
+
+
+Шаг 4: Дополните сообщение (опционально)
+    Если нужно, добавьте тело сообщения. Опишите детали:
+
+    Что именно изменено?
+
+    Зачем это сделано?
+
+    Какие дополнительные сведения нужно знать?
+
+        Пример:
+            fix(ui): fix button display issue
+
+            Ensure proper button rendering on low-resolution screens.
+
+
+Шаг 5: Укажите BREAKING CHANGE (если нужно)
+    Если изменение несовместимо с предыдущими версиями, укажите это в сообщении:
+
+
+    Пример:
+        feat(api): remove support for legacy data format
+
+        BREAKING CHANGE: API no longer supports XML.
+
+
+
+------------------ Готовые примеры для для вдохновения⭐️ ------------------
+    1.Добавление новой функциональности:
+
+        feat(auth): add Google authentication support
+
+
+    2. Исправление ошибки:
+
+        fix(ui): fix button alignment issue
+    
+
+    3.Обновление документации:
+
+        docs: update API documentation
+
+    
+    4. Оптимизация производительности:
+
+        perf(core): reduce application load time
+
+
+    5. Критическое изменение:
+
+        feat(api): remove support for old endpoints
+
+        BREAKING CHANGE: deprecated endpoints removed.
+
+
+    6. Откат изменений:
+
+        revert: revert commit c12345
+
+        Reverts changes that broke login functionality.
