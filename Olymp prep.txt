@@ -1,8 +1,0 @@
-Вставка скрипта: 
-    <script src='a/yo.js'> </script>
-
-
-DOM: 
-    document.getElementsByClassName('block__elem').innerHTML = 'Hello world!';
-
-    
