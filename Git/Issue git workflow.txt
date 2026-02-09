@@ -1,0 +1,34 @@
+I. Создание задачи
+    1. Создать Issue на GitHub
+    2. Создать ветку для этого Issue на GitHub
+
+
+II. Начало работы
+    1. Создать и переключиться на ветку
+        а) На локальном компьютере стянуть все изменения с GitHub. В том числе и о новой созданной ветке
+            git fetch origin
+        б) Переключиться на новую ветку
+            git checkout 9-feat-migrate-from-cra-to-vite
+
+    2. Написать код и сделать коммиты
+
+
+III. Ревью и Слияние
+    1. Отравить ветку на GitHub
+        git push origin 9-migrate-from-create-react-app-to-vite
+    
+    2. Создать Pull Request
+        Указать что хочу слить ветку 9-migrate-from-create-react-app-to-vite в main
+
+    3. Слить (Merge) Pull Request 
+
+
+IV. Очистка
+    1. В терминале переключиться обратно на main
+        git checkout main
+
+    2. Обновить локальную main
+        git pull origin main
+
+    3. Удалить локальную ветку
+        git branch -d 9-migrate-from-create-react-app-to-vite 
