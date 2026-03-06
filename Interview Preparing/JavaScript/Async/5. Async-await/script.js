@@ -1,9 +1,16 @@
-async function asyncFunction() {
-    const response = await setTimeout(() => 'responseeee', 2000)
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-    console.log('ответ получен', response)
-    return response
+async function greet() {
+  console.log("Жду...");
+  await delay(1000); // Ожидаем 1 секунду
+  console.log("Привет после 1 секунды!");
 }
 
 
-asyncFunction()
+greet();
+
+setTimeout(() => {
+    console.log('yoyoyo')
+}, 500)
