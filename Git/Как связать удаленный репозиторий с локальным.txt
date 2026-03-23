@@ -1,0 +1,17 @@
+1. Создать локальный
+    git init
+
+2. Добавить файлы в локальный
+
+3. Сделать коммит
+
+4. Поменять название ветки
+    git branch -m main
+
+5. Создать удаленный
+
+6. Связать оба
+    git remote add origin https://github.com/mynameisedward/repository
+
+7. Запушить ветку 
+    git push -u origin main
