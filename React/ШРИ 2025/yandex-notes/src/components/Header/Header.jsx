@@ -1,0 +1,19 @@
+import React from 'react';
+import styles from './Header.module.css';
+
+export const Header = function Header({ notesCount }) {
+
+
+
+    return (
+        <header className={styles.header}>
+            <h1 className={styles.title}>
+                <span className={styles.ya}>Я</span>
+                <span className={styles.text}>ндекс Заметки</span>
+            </h1>
+            <div className={styles.notesCount}>
+                Всего заметокккк: <span id="notesCount">{notesCount}</span>
+            </div>
+        </header>
+    );
+};
