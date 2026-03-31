@@ -53,7 +53,11 @@
     i - не учитывать регистр
 
 
-11. Перевести из числа в hex 
+11. Проверить строку с регулярным выражением 
+    const regex = /[a-z]/i
+    regex.test('string')
+
+12. Перевести из числа в hex 
     Number(number).toString(16).padStart(2, '0')
 
 
