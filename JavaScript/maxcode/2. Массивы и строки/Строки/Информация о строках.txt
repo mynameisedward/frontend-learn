@@ -9,6 +9,9 @@
     
 
 3. localCompare - Сравнивает две строки
+
+    str.localCompare(target)
+
     (target) => (-1 | 0 | 1)
 
     Если str должна идти перед target    -1
